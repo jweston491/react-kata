@@ -157,9 +157,12 @@ const Landing = () => {
                     }
                   </form>
                   <div className="book-service">
-                  <Button 
-                    onClick={ handleBooking }
-                    >Book Now</Button>
+                    {/**
+                     * Because of both time considerations (thank you for seeing me on short notice!) and lack of wireframe, I wasn't sure how to approach the screen for submitting the booking form. I'm happy to discuss potential approaches during the interview. Thank you again!
+                     */}
+                    <Button 
+                      onClick={ handleBooking }
+                      >Book Now</Button>
                   </div>
                 </Accordion>)
             })
