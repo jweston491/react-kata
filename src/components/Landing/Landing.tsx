@@ -76,13 +76,19 @@ const Landing = () => {
     if (!hasStarted) return;
 
     const handleFetchServices = async () => {
-    
-      let appointments = await getAppointments()
+      
+      let appointments: Appointment[]
 
-      if ( appointments ) {
-        // todo: Filter services that are available within appointments
-        setAppointmentData( appointments )
-      } else {
+      try {
+        appointments = await getAppointments()
+
+        if ( appointments && appointments.length > 0 ) {
+          // todo: Filter services that are available within appointments
+          setAppointmentData( appointments )
+        } else {
+          setAppointmentData([])
+        }
+      } catch( e ) {
         setAppointmentData([])
       }
       

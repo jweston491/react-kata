@@ -11,13 +11,14 @@
     justify-content: space-between;
 }
 
-.accordion > * {
-    flex: 1 0 auto;
+.accordion > *:first-child {
+    flex: 1 1 75%;
 }
 
 .accordion > .accordion-caret-container {
     text-align: right;
-    flex: 0 0 10%;
+    flex-grow: 0;
+    margin-left: auto;
 }
 
 .accordion .caret svg {
