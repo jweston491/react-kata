@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(cors());
 app.set("json spaces", 2);
 
-type Service = {
+export type Service = {
   id: number;
   name: string;
   duration: number;

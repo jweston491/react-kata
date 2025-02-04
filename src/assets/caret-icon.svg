@@ -10,6 +10,6 @@
         <mask id="mask-2" fill="white">
             <use xlink:href="#path-1"></use>
         </mask>
-        <use id="CaretIcon" fill="#3A3A3A" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <use id="CaretIcon" fill="#0292d3" fill-rule="nonzero" xlink:href="#path-1"></use>
     </g>
 </svg>

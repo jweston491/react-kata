@@ -3,8 +3,9 @@
   border: none;
   color: white;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
   padding: 10px 15px;
+  border-radius: 4px;
 }
 .primary:hover {
   background-color: #0282c3;

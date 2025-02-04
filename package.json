@@ -7,14 +7,15 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "normalize.css": "^8.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.2",
     "react-scripts": "^4.0.0"
   },
   "scripts": {
-    "start": "tsc && react-scripts start",
-    "build": "tsc && react-scripts build",
+    "start": "tsc && react-scripts --openssl-legacy-provider start",
+    "build": "tsc && react-scripts --openssl-legacy-provider build",
     "test": "tsc && react-scripts test",
     "lint": "tsc",
     "server": "tsc --project tsconfig-server.json && node ./dist/server/index.js"

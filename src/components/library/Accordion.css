@@ -1,0 +1,36 @@
+.accordion.accordion {
+    -webkit-box-shadow: 0px 4px 5px 0px var( --lithia-gray );
+    -moz-box-shadow: 0px 4px 5px 0px var( --lithia-gray );
+    box-shadow: 0px 4px 5px 0px var( --lithia-gray );
+    padding: 1rem;
+    width: 100%;
+    max-width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion > * {
+    flex: 1 0 auto;
+}
+
+.accordion > .accordion-caret-container {
+    text-align: right;
+    flex: 0 0 10%;
+}
+
+.accordion .caret svg {
+    max-width: 2rem;
+}
+
+.accordion-open-content {
+    border-top: 2px solid black;
+    padding-top: 1rem;
+    flex: 0 0 100%;
+    padding: 1rem;
+}
+
+.is-open {
+    transform: rotate(180deg)
+}

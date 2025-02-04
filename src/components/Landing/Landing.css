@@ -1,4 +1,116 @@
 .splash {
-  margin-top: 200px;
+  /* Remove margin top to bring closer to wireframe */
+  /* margin-top: 200px; */
   text-align: center;
+}
+
+.splash > * {
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.splash > img {
+  max-width: 30rem;
+  width: 100%;
+}
+
+.splash p {
+  color: black;
+  line-height: 2;
+  font-weight: 500;
+  max-width: 55.5ch;
+}
+
+.splash .schedule-cta {
+  width: 16rem;
+  margin-top:2rem;
+}
+
+.accordion .service {
+  display: flex;
+  align-items: center;
+  color: 606060;
+}
+
+.accordion .service > *:first-child {
+  flex: 0 0 33%;
+}
+
+.accordion .service > *:nth-child(2) {
+  flex: 1;
+  text-align: left;
+}
+
+.accordion-title {
+  color: #606060;
+}
+
+.service img {
+  max-width: 6rem;
+  opacity: .7
+}
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+}
+.service-list li {
+  color: var( --lithia-blue );
+  text-align: left;
+  list-style-type: circle;
+  display: flex;
+  align-items: center;
+  line-height: 1.6;
+ 
+}
+
+.service-list > div {
+  margin: 0.5rem 0;
+  color: var( --lithia-blue )
+}
+.service-list input[type="radio"] {
+  margin-right: .7rem;
+  accent-color: var( --lithia-blue )
+}
+
+.service-list input[type="radio"] {
+  appearance: none; 
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var( --lithia-blue );
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.service-list input[type="radio"]:checked::before {
+  content: "";
+  width: .5rem;
+  height: .5rem;
+  background-color: var( --lithia-blue );
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-list label {
+  cursor: pointer;
+}
+
+
+.book-service {
+  text-align: left;
+} 
+
+.book-service .primary {
+  margin-top: 1rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
